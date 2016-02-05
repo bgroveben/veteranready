@@ -19,12 +19,13 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
+/*
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #89867e;
 	background: #fff;
 }
-
+*/
 a {
 	color: #888;
 	text-decoration: none;
@@ -36,6 +37,7 @@ a:active {
 }
 
 /* Header Style */
+/*
 .main,
 .container > header {
 	margin: 0 auto;
@@ -59,7 +61,7 @@ a:active {
 	opacity: 0.5;
 	padding: 0 0 0.6em 0.1em;
 }
-
+*/
 /* To Navigation Style */
 .codrops-top {
 	background: #fff;
@@ -122,7 +124,7 @@ a:active {
 .codrops-icon-about:before {
 	content: "\e003";
 }
-
+/*
 .container {
 	height: 100%;
 	position: relative;
@@ -145,7 +147,7 @@ a:active {
 .container > section p.text {
 	font-size: 1.4em;
 }
-
+*/
 .no-touch .note-touch {
 	display: none;
 }
