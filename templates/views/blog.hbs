@@ -15,12 +15,17 @@
     <body>
 
         <div class="container">
-            <h1>Basic example</h1>
+            <h1>Community Partners</h1>
 		</div>
 
 		<div class="container">
 
             <ul class="gridder">
+                {{#each data.agency}}
+                <li class="gridder-list" data-griddercontent="#gridder-content-1">
+                <img src="{{cloudinaryUrl logo width='1000'}}" class="img-responsive" alt="{{contactName}}" style="margin-top:10px;">
+                </li>
+                {{/each}}
                 <li class="gridder-list" data-griddercontent="#gridder-content-1">
                     <img src="http://placehold.it/200x200&text=Item 1" class="img-responsive" />
                 </li><!--
