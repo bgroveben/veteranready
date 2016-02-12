@@ -24,8 +24,8 @@
             <ul class="gridder">
                 {{#each data.agency}}
                 <li class="gridder-list" data-griddercontent="#gridder-content-1">
-                    <div class="thumbnail span2 text-center" style="height:220px;">
-                        <img src="{{cloudinaryUrl logo width='500'}}" class="img-responsive" alt="{{contactName}}" style="margin-top:10px; min-height:80px;height:80px;">
+                    <div class="thumbnail text-center" style="height:220px;">
+                        <img src="{{cloudinaryUrl logo}}" class="img-responsive" alt="{{contactName}}" style="margin-top:10px; min-height:80px;height:80px;">
                         <label style="margin-top:20px; color: #003057;">{{name}}</label>
                     </div>
                 </li>
@@ -59,7 +59,7 @@
             </ul>
 -->
 
-
+        {{#each data.agency}}
             <div id="gridder-content-1" class="gridder-content">
                 <div class="row">
                     <div class="col-sm-6">
@@ -73,6 +73,7 @@
                     </div>
                 </div>
             </div>
+        {{/each}}
             <div id="gridder-content-2" class="gridder-content">
                 <div class="row">
                     <div class="col-sm-6">
@@ -181,7 +182,7 @@
                     animationSpeed: 400,
                     animationEasing: "easeInOutExpo",
                     onStart: function () {
-                        console.log("Gridder Inititialized");
+                        console.log("Gridder Initialized");
                     },
                     onExpanded: function (object) {
                         console.log("Gridder Expanded");
