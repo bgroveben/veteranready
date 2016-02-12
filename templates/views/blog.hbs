@@ -13,13 +13,14 @@
         <link href="gridder-master/demo/css/demo.css" rel="stylesheet">
     </head>
     <body>
-
         <div class="container">
-            <h1>Community Partners</h1>
-		</div>
-
+          <div class="jumbotron">
+            <div class="container text-center" style="margin-top:-35px; margin-bottom:-30px">
+        			<h2 class="text-center" style="color:#003057;">Showing {{data.agency.length}} Community Partners</h2>
+            </div>
+          </div>
+        </div>
 		<div class="container">
-
             <ul class="gridder">
                 {{#each data.agency}}
                 <li class="gridder-list" data-griddercontent="#gridder-content-1">
